@@ -4,8 +4,9 @@ from datetime import datetime
 import requests
 
 
-now=datetime.now()
+
 while True:
+    now=datetime.now()
     url="http://172.104.207.9:8000/device?uid=5678"
     Date=now.strftime("%d%m")
     Time=now.strftime("%H%M%S")
